@@ -3,14 +3,14 @@
 import pandas as pd
 import re
 
-sr = pd.Series(['New_Yokr', 'Libson', 'Tokyo', 'Paris', 'Munich'])
+sr = pd.Series(['gey', 'turd', 'potato', 'bad', 'doodey head'])
 
-idx = ['City 1', 'City 2', 'City 3', 'City 4', 'City 5']
+idx = ['your mom:', 'your dad:', 'your computer:', 'your taste:', 'you:']
 
 sr.index = idx
 
-print(sr)
-
+#print(sr)
+print(pd.Series)
 
 variable = 'integer'
 string = True
