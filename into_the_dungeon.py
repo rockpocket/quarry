@@ -10,5 +10,5 @@ else:
 
 role = input("Now, let's begin, first, choose a class: Fighter, Wizard, or Crackhead?\n")
 
-if role == "Wizard"
-    "Ah, so the "
+if role.casefold() == "Wizard":
+    print("Ah, so the ")
