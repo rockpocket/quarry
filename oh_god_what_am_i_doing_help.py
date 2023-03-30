@@ -3,7 +3,7 @@
 import pandas as pd
 import re
 
-sr = pd.Series(['New_Yokr', 'Libson', 'Tokyo', 'Paris', 'Munich'])
+sr = pd.Series(['New_York', 'Libson', 'Tokyo', 'Paris', 'Munich'])
 
 idx = ['City 1', 'City 2', 'City 3', 'City 4', 'City 5']
 
