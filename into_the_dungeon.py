@@ -10,5 +10,9 @@ else:
 
 role = input("Now, let's begin, first, choose a class: Fighter, Wizard, or Crackhead?\n")
 
-if role.casefold() == "Wizard":
-    print("Ah, so the ")
+role = role.casefold()
+
+if role == "wizard":
+    print("Ah, so the spell slinging wizard, wise choice, or so, we shall see.")
+
+print("\n\nNow, our story begins in the Old Town of Barley Hump.")
