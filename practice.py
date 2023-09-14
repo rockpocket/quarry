@@ -1,6 +1,9 @@
-bananas = 5
-cost = 2
+amount = 5
+iterations = 2
 
-total = bananas * cost
-
-print(total)
+try:
+    average = amunt / iterations
+except ZeroDivisionError:
+    print("You can't divide by zero")
+finally:
+    print(average)
