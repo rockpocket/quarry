@@ -23,14 +23,19 @@ match role:
     case "crackhead":
         print("Addiction is just the beginning of your woes.")
 
-sleep(2)
 
 race = input("Now, please select your race... are you a lizard, an elf, or a motherfucking LIVING CHANISAW?!")
 
 match race:
-    case "lizard"
+    case "lizard":
         print("Slithery, brutal, and dumb as shit, this lizard dominates nature, and certain segments of the natural world.")
+    case "elf":
+        print("Nature good. Natural world bad. Make the world better by killing racist humans. Your forest shall encroach all.")
 
+chainsaw = "chainsaw"
 
-print("\n\nNow, our story begins in the Old Town of Barley Hump.")
+if chainsaw.lower() in race.lower():
+    print("You are chaos. You live for destruction. Viewer discretion is advised.")
+
+print("Now, our story begins in the Old Town of Barley Hump.")
 
