@@ -53,5 +53,25 @@ chainsaw = "chainsaw"
 if "chainsaw" in race:
     print("You are chaos. You live for destruction. Viewer discretion is advised.")
 
+sleep(1)
+
+#Asking the player for their backstory
+backstory = input("And finally... what is your backstory? Are you rich, poor, or military?")
+
+backstory = backstory.casefold()
+
+sleep(1)
+
+match backstory:
+    case "rich":
+        print("Good choice. Probably the best choice, honestly. Money solves, like, every problem.")
+    case "poor":
+        print("Understood. You have selected HARD MODE. Good luck.")
+    case "military":
+        print("Military, of course. Who needs wealth or social status when you're capable of killing the people around you.")
+
+sleep(1)
+
+#Begin Journey
 print("Now, our story begins in the Old Town of Barley Hump.")
 
