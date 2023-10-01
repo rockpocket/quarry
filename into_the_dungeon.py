@@ -38,7 +38,7 @@ sleep(1)
 
 
 #Asking the player his race
-race = input("Now, please select your race... are you a lizard, an elf, or a motherfucking LIVING CHANISAW?!\n")
+race = input("Now, please select your race... are you a lizard, an elf, or a motherfucking LIVING CHAINSAW?!\n")
 
 race = race.casefold()
 
