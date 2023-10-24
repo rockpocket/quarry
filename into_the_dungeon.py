@@ -9,7 +9,7 @@ name = input("Welcome Adventurer, to The Dungeon!\nFirst off, may I ask your nam
 def sleep(sec):
     time.sleep(sec)
 
-sleep(1)
+sleep(2)
 
 #Asking the player his name
 if name == "no":
@@ -19,7 +19,7 @@ elif (name is None):
 else:
     print(name + ", Wonderful! What a grand name, not stupid at all.")
 
-sleep(1)
+sleep(2)
 
 role = input("Now, let's begin, first, choose a class: fighter, wizard, or crackhead?\n")
 
@@ -34,7 +34,7 @@ match role:
     case "crackhead":
         print("Addiction is just the beginning of your woes.")
 
-sleep(1)
+sleep(2)
 
 
 #Asking the player his race
@@ -53,14 +53,14 @@ chainsaw = "chainsaw"
 if "chainsaw" in race:
     print("You are chaos. You live for destruction. Viewer discretion is advised.")
 
-sleep(1)
+sleep(2)
 
 #Asking the player for their backstory
 backstory = input("And finally... what is your backstory? Are you rich, poor, or military?")
 
 backstory = backstory.casefold()
 
-sleep(1)
+sleep(2)
 
 match backstory:
     case "rich":
@@ -70,12 +70,12 @@ match backstory:
     case "military":
         print("Military, of course. Who needs wealth or social status when you're capable of killing the people around you.")
 
-sleep(1)
+sleep(2)
 
 #Begin Journey
 print("Now, our story begins in the Old Town of Barley Hump.\n")
 
-sleep(1)
+sleep(2)
 
 guard = input("""You are walking to the store to get some groceries, and you are approached by a guard who says\n
 
