@@ -9,7 +9,7 @@ name = input("Welcome Adventurer, to The Dungeon!\nFirst off, may I ask your nam
 def sleep(sec):
     time.sleep(sec)
 
-sleep(2)
+sleep(1)
 
 #Asking the player his name
 if name == "no":
