@@ -77,4 +77,8 @@ print("Now, our story begins in the Old Town of Barley Hump.\n")
 
 sleep(1)
 
-inptu("You are walking to the store to get some groceries, and you are approached by a guard who says")
+guard = input("""You are walking to the store to get some groceries, and you are approached by a guard who says\n
+
+this is a test of script
+
+""")
