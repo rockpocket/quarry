@@ -25,6 +25,8 @@ role = input("Now, let's begin, first, choose a class: fighter, wizard, or crack
 
 role = role.casefold()
 
+sleep(1)
+
 #Asking the player his role
 match role:
     case "wizard":
@@ -42,6 +44,8 @@ race = input("Now, please select your race... are you a lizard, an elf, or a mot
 
 race = race.casefold()
 
+sleep(1)
+
 match race:
     case "lizard":
         print("Slithery, brutal, and dumb as shit, this lizard dominates nature, and certain segments of the natural world.\n")
@@ -53,14 +57,14 @@ chainsaw = "chainsaw"
 if "chainsaw" in race:
     print("You are chaos. You live for destruction. Viewer discretion is advised.\n")
 
-sleep(2)
+sleep(3)
 
 #Asking the player for their backstory
 backstory = input("And finally... what is your backstory? Are you rich, poor, or military?\n")
 
 backstory = backstory.casefold()
 
-sleep(2)
+sleep(1)
 
 match backstory:
     case "rich":
@@ -70,12 +74,12 @@ match backstory:
     case "military":
         print("Military, of course. Who needs wealth or social status when you're capable of killing the people around you.\n")
 
-sleep(2)
+sleep(3)
 
 #Begin Journey
 print("Now, our story begins in the Old Town of Barley Hump.\n")
 
-sleep(2)
+sleep(3)
 
 match role:
     case "wizard":
@@ -89,6 +93,10 @@ match role:
 print(f'''You are walking to the market to get some groceries, when a lone town guardsman approaches you and says
 "Hey! You! {name}! You're under arrest for {crime}, come quietly and face your judgement!\n''')
 
+sleep(8)
+
 guard = input("""Enter your response.
  
 Fight, run, talk, or yeild?\n""")
+
+guard = guard.casefold()
