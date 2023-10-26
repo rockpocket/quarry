@@ -50,7 +50,7 @@ match race:
     case "lizard":
         print("Slithery, brutal, and dumb as shit, this lizard dominates nature, and certain segments of the natural world.\n")
     case "elf":
-        print("Nature good. Natural world bad. Make the world better by killing racist humans. Your forest shall encroach all.\n")
+        print("Nature good. Constructed world bad. Make the world better by killing racist humans. Your forest shall encroach all.\n")
 
 chainsaw = "chainsaw"
 
@@ -97,6 +97,12 @@ sleep(8)
 
 guard = input("""Enter your response.
  
-Fight, run, talk, or yeild?\n""")
+Fight, run, talk, or yield?\n""")
 
 guard = guard.casefold()
+
+match guard:
+    case "fight":
+    case "run":
+    case "talk":
+    case "yield":
