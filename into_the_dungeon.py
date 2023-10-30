@@ -103,6 +103,12 @@ guard = guard.casefold()
 
 match guard:
     case "fight":
+            match role:
+                case "wizard":
+                    guard = "win"
+                    print("You use your wizardly powers and ignite the foolish lawkeeper into a blazing inferno.")
+                case "fighter":
+                    guard = "win":
     case "run":
     case "talk":
     case "yield":
