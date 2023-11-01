@@ -176,7 +176,10 @@ match guard:
                 tofflin.casefold()
                 if "yes" in tofflin:
                     print('''"Yippie!" Tofflin anounced as he jumps joyously. "This quest will be the gayest ever. Onward!"''')
-
+                    tofflin = True
+                else:
+                    print("You crush the young boys dreams and ride away triumphantly as he cries in rejection.")
+                    tofflin = False
         print("You meet a weapons trader that is a former pirate named DickBeard. He offers to se")
 
         trader = input("")
