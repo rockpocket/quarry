@@ -160,27 +160,33 @@ match guard:
         sleep(4)
         action = input("do you head to the dungeon, or do you simply head back home?")
         action = action.casefold()
+        sleep(2)
         if "home" in action:
             print("you gather your groceries and return to your home, where you live comfortably for several weeks until one day you, your belongings, and all your loved ones are burned to death in a dragon attack. The End.")
+            sleep(10)
             exit()
         elif "dungeon" in action:
             print("You snatch the poster off the wall and start heading in the direction of the dungeon, ready to get paid")
+            sleep(2)
             civilian = input('''"Hey man, we were reading that!" one of the civilians yells at you. Do you run, fight, or return the poster?''')
             civilian.casefold()
+            sleep(2)
             if "fight" in civilian:
-                print("you karate chop their fucking heads off and the mob of dumbfuck peasents run away crying and flailing.")
+                print("you karate chop their fucking heads off and the mob of dumb-fuck peasants run away crying and flailing.")
+                tofflin = False
             elif "run" in civilian:
                 print("you run away laughing, the poster flapping in the wind.")
+                tofflin = False
             elif "return" or "poster" in civilian:
                 tofflin = input("How very civil of you. So civil in fact, one of them decides to support your quest! His name is Tofflin, and he wish's to be you squire. Do you accept? Yes or no.")
                 tofflin.casefold()
                 if "yes" in tofflin:
-                    print('''"Yippie!" Tofflin anounced as he jumps joyously. "This quest will be the gayest ever. Onward!"''')
+                    print('''"Yippie!" Tofflin announces as he jumps joyously. "This quest is going to be the gayest ever... Onward!"''')
                     tofflin = True
                 else:
-                    print("You crush the young boys dreams and ride away triumphantly as he cries in rejection.")
+                    print("You crush the young boys dreams and stride away proudly as he cries in rejection.")
                     tofflin = False
-        print("You meet a weapons trader that is a former pirate named DickBeard. He offers to se")
+        print("On your way out of town to head to the Dungeon, you meet a weapons trader, He is a former pirate named DickBeard. He offers to sell you a weapon, but you can only afford one.")
 
         trader = input("")
         weapon =
