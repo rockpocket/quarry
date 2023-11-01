@@ -48,7 +48,7 @@ sleep(1)
 
 match race:
     case "lizard":
-        print("Slithery, brutal, and dumb as shit, this lizard dominates nature, and certain segments of the natural world.\n")
+        print("Slithery, brutal, and dumb as shit, this lizard dominates nature, and certain parts of the civilized world.\n")
     case "elf":
         print("Nature good. Constructed world bad. Make the world better by killing racist humans. Your forest shall encroach all.\n")
 
@@ -91,7 +91,7 @@ match role:
 
 
 print(f'''You are walking to the market to get some groceries, when a lone town guardsman approaches you and says
-"Hey! You! {name}! You're under arrest for {crime}, come quietly and face your judgement!\n''')
+"Hey! You! {name}! You're under arrest for {crime}, come quietly and face your judgement!"\n''')
 
 sleep(8)
 
@@ -100,6 +100,8 @@ guard = input("""Enter your response.
 Fight, run, talk, or yield?\n""")
 
 guard = guard.casefold()
+
+sleep(2)
 
 match guard:
     case "fight":
@@ -189,11 +191,11 @@ match guard:
         print("On your way out of town to head to the Dungeon, you meet a weapons trader, He is a former pirate named DickBeard. He offers to sell you a weapon, but you can only afford one.")
 
         trader = input("")
-        weapon =
+        weapon = ""
     case "win":
-        weapon =
+        weapon = ""
     case "caught":
-        weapon =
+        weapon = ""
 
 #THE DUNGEON
 #Factors will include the decisions made up to this point
