@@ -108,7 +108,53 @@ match guard:
                     guard = "win"
                     print("You use your wizardly powers and ignite the foolish lawkeeper into a blazing inferno.")
                 case "fighter":
-                    guard = "win":
+                    guard = "win"
+                    print("You kick his shin so hard it goes into his ass and he explodes")
+                case "crackhead":
+                    guard = "caught"
+                    print("you launch your wobbling body through the air toward the guard who kicks the shit out of you and knocks you unconscious.")
     case "run":
+            match role:
+                case "wizard":
+                    guard = "caught"
+                    print("your frail nerd legs can't outrun a trained guard. Your hilarious attempt to run ends with the guard dragging you away by your collar, flailing.")
+                case "fighter":
+                    guard = "escaped"
+                    print("after a dramatically long, dangerous and parkour fueled chase scene, you narrowly avoid the guard by hopping on a cart.")
+                case "crackhead":
+                    guard = "escaped"
+                    print("you take off the other direction and haul ass through the city and mind boggling speeds. Even after losing the guard, you just kept running for some time.")
     case "talk":
+            match role:
+                case "wizard":
+                    guard = "win"
+                    print("A twisting of words with a small dash of spells and you've convinced the guard you are know danger to the city, he lets you free.")
+                case "fighter":
+                    guard = "caught"
+                    print("You make an attempt at talking that comes out to be a bit more on the angry grunt side. During your aggressive babbling, a second guard bonks you out cold.")
+                case "crackhead":
+                    guard = "caught"
+                    print("You ramble off incoherent psychobabble about goblins living in your attic and trying to convince the guard to give you some change. Eventually, he just arrests you.")
     case "yield":
+            match role:
+                case "wizard":
+                    guard = ""
+                    print("")
+                case "fighter":
+                    guard = ""
+                    print("")
+                case "crackhead":
+                    guard = ""
+                    print("")
+
+#       Saving this for later
+#          match role:
+#              case "wizard":
+#                    guard = ""
+#                    print("")
+#                case "fighter":
+#                    guard = ""
+#                    print("")
+#                case "crackhead":
+#                    guard = ""
+#                    print("")
