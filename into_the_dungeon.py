@@ -77,7 +77,7 @@ match backstory:
 sleep(3)
 
 #Begin Journey
-print("Now, our story begins in the Old Town of Barley Hump.\n")
+print("Now, our story begins in the old town of Barley Hump.\n")
 
 sleep(3)
 
@@ -134,7 +134,7 @@ match guard:
                     print("You make an attempt at talking that comes out to be a bit more on the angry grunt side. During your aggressive babbling, a second guard bonks you out cold.")
                 case "crackhead":
                     guard = "caught"
-                    print("You ramble off incoherent psychobabble about goblins living in your attic and trying to convince the guard to give you some change. Eventually, he just arrests you.")
+                    print("You ramble off incoherently something about goblins living in your attic and then you try to convince the guard to give you some change. Eventually, he just arrests you.")
     case "yield":
             guard = "caught"
             print("Your hands are tied with rope and you are escorted through the city streets")
