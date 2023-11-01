@@ -163,9 +163,19 @@ match guard:
         if "home" in action:
             print("you gather your groceries and return to your home, where you live comfortably for several weeks until one day you, your belongings, and all your loved ones are burned to death in a dragon attack. The End.")
             exit()
-        elif dungeon in action:
+        elif "dungeon" in action:
             print("You snatch the poster off the wall and start heading in the direction of the dungeon, ready to get paid")
             civilian = input('''"Hey man, we were reading that!" one of the civilians yells at you. Do you run, fight, or return the poster?''')
+            civilian.casefold()
+            if "fight" in civilian:
+                print("you karate chop their fucking heads off and the mob of dumbfuck peasents run away crying and flailing.")
+            elif "run" in civilian:
+                print("you run away laughing, the poster flapping in the wind.")
+            elif "return" or "poster" in civilian:
+                tofflin = input("How very civil of you. So civil in fact, one of them decides to support your quest! His name is Tofflin, and he wish's to be you squire. Do you accept? Yes or no.")
+                tofflin.casefold()
+                if "yes" in tofflin:
+                    print('''"Yippie!" Tofflin anounced as he jumps joyously. "This quest will be the gayest ever. Onward!"''')
 
         print("You meet a weapons trader that is a former pirate named DickBeard. He offers to se")
 
