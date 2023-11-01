@@ -136,17 +136,8 @@ match guard:
                     guard = "caught"
                     print("You ramble off incoherent psychobabble about goblins living in your attic and trying to convince the guard to give you some change. Eventually, he just arrests you.")
     case "yield":
-            match role:
-                case "wizard":
-                    guard = ""
-                    print("")
-                case "fighter":
-                    guard = ""
-                    print("")
-                case "crackhead":
-                    guard = ""
-                    print("")
-
+            guard = "caught"
+            print("Your hands are tied with rope and you are escorted through the city streets")
 #       Saving this for later
 #          match role:
 #              case "wizard":
@@ -158,3 +149,9 @@ match guard:
 #                case "crackhead":
 #                    guard = ""
 #                    print("")
+
+match guard:
+    case "escaped":
+
+    case "win":
+    case "caught":
