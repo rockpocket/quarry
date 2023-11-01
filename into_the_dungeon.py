@@ -150,11 +150,30 @@ match guard:
 #                    guard = ""
 #                    print("")
 
+sleep(4)
+
 match guard:
     case "escaped":
+        print("You've arrived on the outskirts of town, along the docks.")
+        sleep(2)
+        print("You come across a group of citizens gathered around a 'Help wanted' poster. It's offering 1000 Gold and dinner with The Mayor for whomever can slay the dragon that has taken residence in a nearby, abandoned, sub-terranean prison, and has been terrorizing the surrounding lands.")
+        sleep(4)
+        action = input("do you head to the dungeon, or do you simply head back home?")
+        action = action.casefold()
+        if "home" in action:
+            print("you gather your groceries and return to your home, where you live comfortably for several weeks until one day you, your belongings, and all your loved ones are burned to death in a dragon attack. The End.")
+            exit()
+        elif dungeon in action:
+            print("You snatch the poster off the wall and start heading in the direction of the dungeon, ready to get paid")
+            civilian =
+        print("You meet a weapons trader that is a former pirate named DickBeard. He offers to se")
 
+        trader = input("")
+        weapon =
     case "win":
+        weapon =
     case "caught":
+        weapon =
 
 #THE DUNGEON
 #Factors will include the decisions made up to this point
