@@ -109,7 +109,7 @@ match guard:
                     print("You use your wizardly powers and ignite the foolish lawkeeper into a blazing inferno.")
                 case "fighter":
                     guard = "win"
-                    print("You kick his shin so hard it goes into his ass and he explodes")
+                    print("You kick the guards shin so hard it goes into his ass and he explodes")
                 case "crackhead":
                     guard = "caught"
                     print("you launch your wobbling body through the air toward the guard who kicks the shit out of you and knocks you unconscious.")
@@ -134,7 +134,7 @@ match guard:
                     print("You make an attempt at talking that comes out to be a bit more on the angry grunt side. During your aggressive babbling, a second guard bonks you out cold.")
                 case "crackhead":
                     guard = "caught"
-                    print("You ramble off incoherently something about goblins living in your attic and then you try to convince the guard to give you some change. Eventually, he just arrests you.")
+                    print("You start babbling incoherently something about goblins living in your attic and then you try to convince the guard to give you some money. Eventually, he just arrests you.")
     case "yield":
             guard = "caught"
             print("Your hands are tied with rope and you are escorted through the city streets")
@@ -155,3 +155,6 @@ match guard:
 
     case "win":
     case "caught":
+
+#THE DUNGEON
+#Factors will include the decisions made up to this point
