@@ -165,7 +165,8 @@ match guard:
             exit()
         elif dungeon in action:
             print("You snatch the poster off the wall and start heading in the direction of the dungeon, ready to get paid")
-            civilian =
+            civilian = input('''"Hey man, we were reading that!" one of the civilians yells at you. Do you run, fight, or return the poster?''')
+
         print("You meet a weapons trader that is a former pirate named DickBeard. He offers to se")
 
         trader = input("")
