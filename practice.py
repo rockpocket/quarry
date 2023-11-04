@@ -9,12 +9,17 @@
 #    print(average)
 
 
-test = """This
-is
-printing
-a
-test"""
+#test = """This
+#is
+#printing
+#a
+#test"""
 
-test = str(test)
+#test = str(test)
 
-print(test)
+#print(test)
+
+print("*test*")
+
+civilian = input("\"Hey man, we were reading that!\" one of the civilians yells at you.
+Do you run, fight, or return the poster?\n")

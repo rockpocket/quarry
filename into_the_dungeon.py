@@ -48,9 +48,11 @@ sleep(1)
 
 match race:
     case "lizard":
-        print("Slithery, brutal, and dumb as shit, this lizard dominates nature, and certain parts of the civilized world.\n")
+        print("Slithery, brutal, and dumb as shit, this lizard dominates nature, and certain"
+              "parts of the civilized world.\n")
     case "elf":
-        print("Nature good. Constructed world bad. Make the world better by killing racist humans. Your forest shall encroach all.\n")
+        print("Nature good. Constructed world bad. Make the world better by killing"
+              "racist humans. Your forest shall encroach all.\n")
 
 chainsaw = "chainsaw"
 
@@ -114,29 +116,37 @@ match guard:
                     print("You kick the guards shin so hard it goes into his ass and he explodes")
                 case "crackhead":
                     guard = "caught"
-                    print("you launch your wobbling body through the air toward the guard who kicks the shit out of you and knocks you unconscious.")
+                    print("you launch your wobbling body through the air toward the guard who kicks the shit"
+                          "out of you and knocks you unconscious.")
     case "run":
             match role:
                 case "wizard":
                     guard = "caught"
-                    print("your frail nerd legs can't outrun a trained guard. Your hilarious attempt to run ends with the guard dragging you away by your collar, flailing.")
+                    print("your frail nerd legs can't outrun a trained guard. Your hilarious attempt to run"
+                          "ends with the guard dragging you away by your collar, flailing.")
                 case "fighter":
                     guard = "escaped"
-                    print("after a dramatically long, dangerous and parkour fueled chase scene, you narrowly avoid the guard by hopping on a cart.")
+                    print("after a dramatically long, dangerous and parkour fueled chase scene, you narrowly"
+                          "avoid the guard by hopping on a cart.")
                 case "crackhead":
                     guard = "escaped"
-                    print("you take off the other direction and haul ass through the city and mind boggling speeds. Even after losing the guard, you just kept running for some time.")
+                    print("you take off the other direction and haul ass through the city and mind boggling speeds."
+                          "Even after losing the guard, you just kept running for some time.")
     case "talk":
             match role:
                 case "wizard":
                     guard = "win"
-                    print("A twisting of words with a small dash of spells and you've convinced the guard you are know danger to the city, he lets you free.")
+                    print("A twisting of words with a small dash of spells and you've convinced the guard you"
+                          "are know danger to the city, he lets you free.")
                 case "fighter":
                     guard = "caught"
-                    print("You make an attempt at talking that comes out to be a bit more on the angry grunt side. During your aggressive babbling, a second guard bonks you out cold.")
+                    print("You make an attempt at talking that comes out to be a bit more on the angry grunt side."
+                          "During your aggressive babbling, a second guard bonks you out cold.")
                 case "crackhead":
                     guard = "caught"
-                    print("You start babbling incoherently something about goblins living in your attic and then you try to convince the guard to give you some money. Eventually, he just arrests you.")
+                    print("You start babbling incoherently something about goblins living in your attic "
+                          "and then you try to convince the guard to give you some money. Eventually, "
+                          "he just arrests you.")
     case "yield":
             guard = "caught"
             print("Your hands are tied with rope and you are escorted through the city streets")
@@ -158,19 +168,26 @@ match guard:
     case "escaped":
         print("You've arrived on the outskirts of town, along the docks.")
         sleep(2)
-        print("You come across a group of citizens gathered around a 'Help wanted' poster. It's offering 1000 Gold and dinner with The Mayor for whomever can slay the dragon that has taken residence in a nearby, abandoned, sub-terranean prison, and has been terrorizing the surrounding lands.")
+        print("You come across a group of citizens gathered around a 'Help wanted' poster. It's offering 1000 Gold"
+              "and dinner with The Mayor for whomever can slay the dragon that has taken residence in a nearby,"
+              "abandoned, sub-terranean prison, and has been terrorizing the surrounding lands.")
         sleep(4)
         action = input("do you head to the dungeon, or do you simply head back home?")
         action = action.casefold()
         sleep(2)
         if "home" in action:
-            print("you gather your groceries and return to your home, where you live comfortably for several weeks until one day you, your belongings, and all your loved ones are burned to death in a dragon attack. The End.")
+            print("""you gather your groceries and return to your home, where you live comfortably for several
+                weeks.until one day you, your belongings, and all your loved ones
+                are burned to death in a dragon attack.
+    
+                *The End*""")
             sleep(10)
             exit()
         elif "dungeon" in action:
             print("You snatch the poster off the wall and start heading in the direction of the dungeon, ready to get paid")
             sleep(2)
-            civilian = input('''"Hey man, we were reading that!" one of the civilians yells at you. Do you run, fight, or return the poster?''')
+            civilian = input('''"Hey man, we were reading that!" one of the civilians yells at you.
+            Do you run, fight, or return the poster?''')
             civilian.casefold()
             sleep(2)
             if "fight" in civilian:
@@ -180,7 +197,8 @@ match guard:
                 print("you run away laughing, the poster flapping in the wind.")
                 tofflin = False
             elif "return" or "poster" in civilian:
-                tofflin = input("How very civil of you. So civil in fact, one of them decides to support your quest! His name is Tofflin, and he wish's to be you squire. Do you accept? Yes or no.")
+                tofflin = input("""How very civil of you. So civil in fact, one of them decides to support your quest!
+                His name is Tofflin, and he wish's to be you squire. Do you accept? Yes or no.""")
                 tofflin.casefold()
                 if "yes" in tofflin:
                     print('''"Yippie!" Tofflin announces as he jumps joyously. "This quest is going to be the gayest ever... Onward!"''')
