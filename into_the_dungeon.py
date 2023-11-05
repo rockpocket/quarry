@@ -105,6 +105,8 @@ guard = guard.casefold()
 
 sleep(2)
 
+#Guard encounter
+
 match guard:
     case "fight":
             match role:
@@ -166,6 +168,9 @@ match guard:
 
 sleep(4)
 
+#After guard encounter and build up to the mission
+#This decide a few things, like whether you get a companion and what weapon you get.
+
 match guard:
     case "escaped":
         print("You've arrived on the outskirts of town, along the docks.")
@@ -213,7 +218,7 @@ match guard:
 
         sleep(3)
 
-        trader = input('''\"WHAT'LL BE YA DICKLESS FUCKIN COWARD!?\" he asks you. In front of his there is a mace, a cutlass,
+        trader = input('''\"WHAT'LL BE YA DICKLESS FUCKIN COWARD!?\" he asks you. In front of him there is a mace, a cutlass,
         and a twenty inch iron dildo.
         
         Which do you choose?\n''')
@@ -225,10 +230,40 @@ match guard:
                 weapon = "mace"
             case "cutlass":
                 weapon = "cutlass"
-            case
 
-        weapon = ""
+        if "iron" or "dildo" in trader:
+            weapon = "iron dildo"
+
+        sleep(2)
+
+        print('''\"Aye, a good choice there laddie!\" says Dickbeard, his locks jiggling majestically.
+        \"Now, ye be careful with that thar quest yer goin' on. They don't offer 1000 Gold for now normal mission.
+        No boy, that amount only gets offered to people they intend to use as cannon fodder. Keep an eye out,
+        OR THEY'LL TAKE YOUR BALLS! HAAHAHAHAHAA!\"\n
+        ''')
+
+        sleep(6)
+
+        print('''You ignore the smell of crusty cheese wafting upon his breath and disembark from the occupied docks\n''')
+
+        sleep(2)
+
+        print('''You have now reached the edge of the city, and upon a dusty dirt road you march off into the wilderness\n''')
+
+        sleep(3)
+
+        if tofflin == True:
+            print('''...and Tofflin skipped behind merily...\n''')
+            sleep(2)
+            print('''...his optimism would not be misplaced, surely...''')
+            sleep(2)
+            print(''':)''')
+
+        sleep(1)
+
     case "win":
+        print('''The guard collapses to the dirt road, no longer a threat. Civilians run in fear of your awesome power.
+        All but one person, a hooded man who watches you from the alley.''')
         weapon = ""
     case "caught":
         weapon = ""
