@@ -301,6 +301,10 @@ match guard:
         sleep(3)
         print('''the man then notions for you to follow him, and slips away into the alley.\n''')
         print(2)
+        if backstory == "poor":
+            print('''Your experience in poverty helps you identify that he's trying to help you hide
+            before more guards show up.''')
+            sleep(3)
         thief = input('''Do you follow him?\n''')
         thief = thief.casefold()
         if "yes" or "follow" in thief:
@@ -311,6 +315,50 @@ match guard:
             a barrel and slips below ground.\n''')
             sleep(2)
             follow = input('''Do you follow him down the hatch?\n''')
+            follow = follow.casefold()
+            if follow == "yes" or "follow":
+                sleep(1)
+                print("")
+            else:
+                sleep(1)
+                print('''You hear a whisper from a voice uncomfortably close to your ear say
+                \"You can't know our secret location and just walk away\"\n''')
+                sleep(3)
+                if role == "fighter":
+                    print('''You feel these fuckers ATTEMPT to place a blade in you back, but you're a fighter.
+                    You're trained specifically to not be about that shit.\n''')
+
+                    sleep(3)
+
+                    print('''You spin around to see two thieves who had emerged from the shadows, shattering ones
+                    collar bone with a fucking karate chop as you do.\n''')
+
+                    sleep(3)
+
+                    print('''The other attempts to disengage, but you grab his arm and break it you three locations
+                    before snapping his shin in half with a downward stomp. You then powerbomb him right the fuck
+                    into the other thief, killing both.\n''')
+
+                    sleep(4)
+
+                    revenge = input('''With the assassins dead, do you now head down the thieves hatch to seek revenge,
+                    or do you run?\n''')
+
+                    if "fight" or "kill" or "revenge" or "hatch" in revenge:
+                        print('''''')
+                    else:
+                        print('''''')
+
+                else:
+                    print('''You feel cold steel peirce your spine, and the world goes black. You are dead.''')
+
+                    sleep(2)
+
+                    print('''*The End*''')
+
+                    sleep(2)
+
+                    exit()
 
         else:
             print('''You ignore the man and begin heading back on your quest for groceries.''')
@@ -322,6 +370,12 @@ match guard:
                     print('''Your days of igniting public buildings are over! Time to die!\"\n''')
                 case "punching the mayor":
                     print('''Your days of punching elected officials are over! Time to die!\"\n''')
+                case "sucking some guys dick behind a medieval auto-parts store":
+                    print('''Your days of shotgunning cocks are over! Time to die!\"\n''')
+            sleep(4)
+            print('''It seems these guards are out for blood and aren't willing to negotiate.''')
+            sleep(3)
+
 
         weapon = ""
 
