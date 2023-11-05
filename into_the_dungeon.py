@@ -150,6 +150,8 @@ match guard:
     case "yield":
             guard = "caught"
             print("Your hands are tied with rope and you are escorted through the city streets")
+
+
 #       Saving this for later
 #          match role:
 #              case "wizard":
@@ -206,9 +208,25 @@ match guard:
                 else:
                     print("You crush the young boys dreams and stride away proudly as he cries in rejection.")
                     tofflin = False
-        print("On your way out of town to head to the Dungeon, you meet a weapons trader, He is a former pirate named DickBeard. He offers to sell you a weapon, but you can only afford one.")
+        print('''On your way out of town to head to the Dungeon, you meet a weapons trader, He is a former pirate named DickBeard.
+              He offers to sell you a weapon, but you can only afford one.''')
 
-        trader = input("")
+        sleep(3)
+
+        trader = input('''\"WHAT'LL BE YA DICKLESS FUCKIN COWARD!?\" he asks you. In front of his there is a mace, a cutlass,
+        and a twenty inch iron dildo.
+        
+        Which do you choose?\n''')
+
+        trader = trader.casefold()
+
+        match trader:
+            case "mace":
+                weapon = "mace"
+            case "cutlass":
+                weapon = "cutlass"
+            case
+
         weapon = ""
     case "win":
         weapon = ""
