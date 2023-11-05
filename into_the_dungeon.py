@@ -195,8 +195,9 @@ sleep(4)
 #After guard encounter and build up to the mission
 #This decide a few things, like whether you get a companion and what weapon you get.
 
-#Escaped to the edge of town
+
 match guard:
+    #Escaped to the edge of town
     case "escaped":
         print("You've arrived on the outskirts of town, along the docks.\n")
         sleep(2)
@@ -307,6 +308,7 @@ match guard:
             sleep(3)
         thief = input('''Do you follow him?\n''')
         thief = thief.casefold()
+        #following the thief
         if "yes" or "follow" in thief:
             print('''You move into the darkened alley, and see the hooded man slunk behind a corner.
             You follow on his heels, staying one step behind as he keep just narrowly keeping himself ahead and slightly hidden.\n''')
@@ -359,7 +361,7 @@ match guard:
                     sleep(2)
 
                     exit()
-
+        #Trying to fight the law, instead of following the thief
         else:
             print('''You ignore the man and begin heading back on your quest for groceries.''')
             sleep(2)
