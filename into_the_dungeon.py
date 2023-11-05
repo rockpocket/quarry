@@ -297,14 +297,14 @@ match guard:
 
 #Defeated the guard and gets pulled into a criminal organization
     case "win":
-        print('''The guard collapses to the dirt road, no longer a threat. Civilians run in fear of your awesome power.
+        print('''The guard collapses to the dirt road, no longer a threat. Civilians run in fear of your awesome power. 
         All but one person, a hooded man who watches you from the alley.\n''')
         sleep(3)
         print('''the man then notions for you to follow him, and slips away into the alley.\n''')
-        print(2)
+        sleep(2)
         if backstory == "poor":
             print('''Your experience in poverty helps you identify that he's trying to help you hide
-            before more guards show up.''')
+            before more guards show up.\n''')
             sleep(3)
         thief = input('''Do you follow him?\n''')
         thief = thief.casefold()
@@ -363,7 +363,7 @@ match guard:
                     exit()
         #Trying to fight the law, instead of following the thief
         else:
-            print('''You ignore the man and begin heading back on your quest for groceries.''')
+            print('''You ignore the man and begin heading back on your quest for groceries.\n''')
             sleep(2)
             print('''However, your actions have seemed to piss off the town guard. Now, 5 guards approach you.
             \"On the ground, Criminal!\n''')
@@ -375,7 +375,7 @@ match guard:
                 case "sucking some guys dick behind a medieval auto-parts store":
                     print('''Your days of shotgunning cocks are over! Time to die!\"\n''')
             sleep(4)
-            print('''It seems these guards are out for blood and aren't willing to negotiate.''')
+            print('''It seems these guards are out for blood and aren't willing to negotiate.\n''')
             sleep(3)
 
 
