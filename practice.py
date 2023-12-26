@@ -19,7 +19,12 @@
 
 #print(test)
 
-print("*test*")
+test = "tetst"
 
-civilian = input("\"Hey man, we were reading that!\" one of the civilians yells at you.
-Do you run, fight, or return the poster?\n")
+while True:
+    match test:
+        case "test":
+            print("correct")
+            break
+    else:
+        print("worked")

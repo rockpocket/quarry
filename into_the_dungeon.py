@@ -92,13 +92,19 @@ backstory = backstory.casefold()
 
 sleep(1)
 
-match backstory:
-    case "rich":
-        print("Good choice. Probably the best choice, honestly. Money solves, like, every problem.\n")
-    case "poor":
-        print("Understood. You have selected HARD MODE. Good luck.\n")
-    case "military":
-        print("Military, of course. Who needs wealth or social status when you're capable of killing the people around you.\n")
+
+#make this a loop
+while True:
+    match backstory:
+        case "rich":
+            print("Good choice. Probably the best choice, honestly. Money solves, like, every problem.\n")
+            break
+        case "poor":
+            print("Understood. You have selected HARD MODE. Good luck.\n")
+            break
+        case "military":
+            print("Military, of course. Who needs wealth or social status when you're capable of killing the people around you.\n")
+            break
 
 sleep(3)
 
