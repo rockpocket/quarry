@@ -105,6 +105,8 @@ while True:
         case "military":
             print("Military, of course. Who needs wealth or social status when you're capable of killing the people around you.\n")
             break
+        case other:
+            backstory = input("I think you mistyped something, or you're jesting. Please try again.\n")
 
 sleep(3)
 
