@@ -157,51 +157,64 @@ sleep(2)
 
 #Guard encounter
 
-match guard:
-    case "fight":
-            match role:
-                case "wizard":
-                    guard = "win"
-                    print('''You use your wizardly powers and ignite the foolish lawkeeper into a blazing inferno.\n''')
-                case "fighter":
-                    guard = "win"
-                    print('''You kick the guards shin so hard it goes into his ass and he explodes\n''')
-                case "crackhead":
-                    guard = "caught"
-                    print('''you launch your wobbling body through the air toward the guard who kicks the shit
-                          out of you and knocks you unconscious.\n''')
-    case "run":
-            match role:
-                case "wizard":
-                    guard = "caught"
-                    print('''your frail nerd legs can't outrun a trained guard. Your hilarious attempt to run
-                          ends with the guard dragging you away by your collar, flailing.\n''')
-                case "fighter":
-                    guard = "escaped"
-                    print('''after a dramatically long, dangerous and parkour fueled chase scene, you narrowly
-                          avoid the guard by hopping on a cart.\n''')
-                case "crackhead":
-                    guard = "escaped"
-                    print('''you take off the other direction and haul ass through the city and mind boggling speeds.
-                          Even after losing the guard, you just kept running for some time.\n''')
-    case "talk":
-            match role:
-                case "wizard":
-                    guard = "win"
-                    print('''A twisting of words with a small dash of spells and you've convinced the guard you
-                          are know danger to the city, he lets you free.\n''')
-                case "fighter":
-                    guard = "caught"
-                    print('''You make an attempt at talking that comes out to be a bit more on the angry grunt side.
-                          During your aggressive babbling, a second guard bonks you out cold.\n''')
-                case "crackhead":
-                    guard = "caught"
-                    print('''You start babbling incoherently something about goblins living in your attic 
-                          and then you try to convince the guard to give you some money. Eventually, 
-                          he just arrests you.\n''')
-    case "yield":
-            guard = "caught"
-            print("Your hands are tied with rope and you are escorted through the city streets\n")
+while True:
+    match guard:
+        case "fight":
+                match role:
+                    case "wizard":
+                        guard = "win"
+                        print('''You use your wizardly powers and ignite the foolish lawkeeper into a blazing inferno.\n''')
+                        break
+                    case "fighter":
+                        guard = "win"
+                        print('''You kick the guards shin so hard it goes into his ass and he explodes\n''')
+                        break
+                    case "crackhead":
+                        guard = "caught"
+                        print('''you launch your wobbling body through the air toward the guard who kicks the shit
+                              out of you and knocks you unconscious.\n''')
+                        break
+        case "run":
+                match role:
+                    case "wizard":
+                        guard = "caught"
+                        print('''your frail nerd legs can't outrun a trained guard. Your hilarious attempt to run
+                              ends with the guard dragging you away by your collar, flailing.\n''')
+                        break
+                    case "fighter":
+                        guard = "escaped"
+                        print('''after a dramatically long, dangerous and parkour fueled chase scene, you narrowly
+                              avoid the guard by hopping on a cart.\n''')
+                        break
+                    case "crackhead":
+                        guard = "escaped"
+                        print('''you take off the other direction and haul ass through the city and mind boggling speeds.
+                              Even after losing the guard, you just kept running for some time.\n''')
+                        break
+        case "talk":
+                match role:
+                    case "wizard":
+                        guard = "win"
+                        print('''A twisting of words with a small dash of spells and you've convinced the guard you
+                              are know danger to the city, he lets you free.\n''')
+                        break
+                    case "fighter":
+                        guard = "caught"
+                        print('''You make an attempt at talking that comes out to be a bit more on the angry grunt side.
+                              During your aggressive babbling, a second guard bonks you out cold.\n''')
+                        break
+                    case "crackhead":
+                        guard = "caught"
+                        print('''You start babbling incoherently something about goblins living in your attic 
+                              and then you try to convince the guard to give you some money. Eventually, 
+                              he just arrests you.\n''')
+                        break
+        case "yield":
+                guard = "caught"
+                print("Your hands are tied with rope and you are escorted through the city streets\n")
+                break
+        case other:
+                guard = input("I think you mistyped something, or you're jesting. Please try again.\n")
 
 
 #       Saving this for later
