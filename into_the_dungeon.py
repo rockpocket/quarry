@@ -1,17 +1,23 @@
 import re
 import time
 
-
-#Defining player name
-name = input("Welcome Adventurer, to The Dungeon!\nFirst off, may I ask your name?\n")
-
 #Defining sleep function
 def sleep(sec):
     time.sleep(sec)
 
+#Defining player name
+name = input("Welcome Adventurer, to The Dungeon!\nFirst off, may I ask your name?\n")
+
+
+
+
 sleep(1)
 
 #Asking the player his name
+
+while True:
+    match name:
+
 if name == "no":
     print("Please don't be difficult, I'm this is me working right now. Name, please")
 elif (name is None):
@@ -52,13 +58,16 @@ role = role.casefold()
 sleep(1)
 
 #Asking the player his role
-match role:
-    case "wizard":
-        print("Ah, so the spell slinging wizard, wise choice, or so, we shall see.\n")
-    case "fighter":
-        print("Sturdy and deadly. Rational features to carry.\n")
-    case "crackhead":
-        print("Addiction is just the beginning of your woes.\n")
+while True:
+    match role:
+        case "wizard":
+            print("Ah, so the spell slinging wizard, wise choice, or so, we shall see.\n")
+        case "fighter":
+            print("Sturdy and deadly. Rational features to carry.\n")
+        case "crackhead":
+            print("Addiction is just the beginning of your woes.\n")
+        case other:
+            backstory = input("I think you mistyped something, or you're jesting. Please try again.\n")
 
 sleep(2)
 
@@ -70,13 +79,16 @@ race = race.casefold()
 
 sleep(1)
 
-match race:
-    case "lizard":
-        print("Slithery, brutal, and dumb as shit, this lizard dominates nature, and certain"
-              "parts of the civilized world.\n")
-    case "elf":
-        print("Nature good. Constructed world bad. Make the world better by killing"
-              "racist humans. Your forest shall encroach all.\n")
+while True:
+    match race:
+        case "lizard":
+            print("Slithery, brutal, and dumb as shit, this lizard dominates nature, and certain"
+                  "parts of the civilized world.\n")
+        case "elf":
+            print("Nature good. Constructed world bad. Make the world better by killing"
+                  "racist humans. Your forest shall encroach all.\n")
+        case other:
+            backstory = input("I think you mistyped something, or you're jesting. Please try again.\n")
 
 chainsaw = "chainsaw"
 
