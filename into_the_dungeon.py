@@ -194,7 +194,7 @@ while True:
         case "talk":
                 match role:
                     case "wizard":
-                        guard = "win"
+                        guard = "convinced"
                         print('''A twisting of words with a small dash of spells and you've convinced the guard you
                               are know danger to the city, he lets you free.\n''')
                         break
@@ -216,24 +216,17 @@ while True:
         case other:
                 guard = input("I think you mistyped something, or you're jesting. Please try again.\n")
 
-
-#       Saving this for later
-#          match role:
-#              case "wizard":
-#                    guard = ""
-#                    print("")
-#                case "fighter":
-#                    guard = ""
-#                    print("")
-#                case "crackhead":
-#                    guard = ""
-#                    print("")
-
 sleep(4)
 
 #After guard encounter and build up to the mission
 #This decide a few things, like whether you get a companion and what weapon you get.
 
+
+#potentials:
+#escaped
+#win
+#convinced
+#caught
 
 match guard:
     #Escaped to the edge of town
@@ -249,7 +242,7 @@ match guard:
         sleep(2)
         if "home" in action:
             print('''you gather your groceries and return to your home, where you live comfortably for several
-                weeks.until one day you, your belongings, and all your loved ones
+                weeks. Until one day; you, your belongings, and all your loved ones
                 are burned to death in a dragon attack.
     
                 *The End*\n''')
