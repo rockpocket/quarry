@@ -17,13 +17,14 @@ sleep(1)
 
 while True:
     match name:
+         case "no":
+             name = input("Please don't be difficult, I'm this is me working right now. Name, please\n")
+         case other:
+             break
 
-if name == "no":
-    print("Please don't be difficult, I'm this is me working right now. Name, please")
-elif (name is None):
-    print("Please don't be difficult, I'm this is me working right now. Name, please")
-else:
-    print(name + ", Wonderful! What a grand name, not stupid at all.\n")
+sleep(2)
+
+print(name + ", Wonderful! What a grand name, not stupid at all.\n")
 
 sleep(3)
 
@@ -62,12 +63,15 @@ while True:
     match role:
         case "wizard":
             print("Ah, so the spell slinging wizard, wise choice, or so, we shall see.\n")
+            break
         case "fighter":
             print("Sturdy and deadly. Rational features to carry.\n")
+            break
         case "crackhead":
             print("Addiction is just the beginning of your woes.\n")
+            break
         case other:
-            backstory = input("I think you mistyped something, or you're jesting. Please try again.\n")
+            role = input("I think you mistyped something, or you're jesting. Please try again.\n")
 
 sleep(2)
 
@@ -84,9 +88,11 @@ while True:
         case "lizard":
             print("Slithery, brutal, and dumb as shit, this lizard dominates nature, and certain"
                   "parts of the civilized world.\n")
+            break
         case "elf":
             print("Nature good. Constructed world bad. Make the world better by killing"
                   "racist humans. Your forest shall encroach all.\n")
+            break
         case other:
             backstory = input("I think you mistyped something, or you're jesting. Please try again.\n")
 
