@@ -133,10 +133,6 @@ sleep(3)
 
 character = (name, role, race, backstory)
 
-print("This is a test")
-print(character[0])
-print(character[1])
-print(character[2-3])
 
 #Begin Journey
 print("Now, our story begins in the old town of Barley Hump.\n")
