@@ -81,6 +81,9 @@ race = input("Now, please select your race... are you a lizard, an elf, or a mot
 
 race = race.casefold()
 
+if "chainsaw" in race:
+    race = "chainsaw"
+
 sleep(1)
 
 while True:
@@ -93,13 +96,13 @@ while True:
             print("Nature good. Constructed world bad. Make the world better by killing"
                   "racist humans. Your forest shall encroach all.\n")
             break
+        case "chainsaw":
+            print("You are chaos. You live for destruction. Viewer discretion is advised.\n")
+            break
         case other:
             backstory = input("I think you mistyped something, or you're jesting. Please try again.\n")
 
-chainsaw = "chainsaw"
 
-if "chainsaw" in race:
-    print("You are chaos. You live for destruction. Viewer discretion is advised.\n")
 
 sleep(3)
 
@@ -127,6 +130,13 @@ while True:
             backstory = input("I think you mistyped something, or you're jesting. Please try again.\n")
 
 sleep(3)
+
+character = (name, role, race, backstory)
+
+print("This is a test")
+print(character[0])
+print(character[1])
+print(character[2-3])
 
 #Begin Journey
 print("Now, our story begins in the old town of Barley Hump.\n")
