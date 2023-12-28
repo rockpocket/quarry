@@ -227,6 +227,7 @@ sleep(4)
 #After guard encounter and build up to the mission
 #This decide a few things, like whether you get a companion and what weapon you get.
 
+path = [guard]
 
 #potentials:
 #escaped
@@ -248,8 +249,8 @@ match guard:
         sleep(2)
         if "home" in action:
             print('''you gather your groceries and return to your home, where you live comfortably for several
-                weeks. Until one day; you, your belongings, and all your loved ones
-                are burned to death in a dragon attack.
+                weeks. Until one day; you, your loved ones and all your belongings
+                are burnt to ashes in a dragon attack.
     
                 *The End*\n''')
             sleep(10)
@@ -288,16 +289,24 @@ match guard:
         
         Which do you choose?\n''')
 
+        if "iron" or "dildo" in trader:
+            trader = "iron dildo"
+
         trader = trader.casefold()
 
-        match trader:
-            case "mace":
-                weapon = "mace"
-            case "cutlass":
-                weapon = "cutlass"
+        while True:
+            match trader:
+                case "mace":
+                    weapon = "mace"
+                case "cutlass":
+                    weapon = "cutlass"
+                case "iron dildo":
+                    weapon = "iron dildo"
+                    break
+                case other:
+                    trader = input("What word is that? I don't have any \"{trader}\". Pick from my selection I got!")
 
-        if "iron" or "dildo" in trader:
-            weapon = "iron dildo"
+
 
         sleep(2)
 
@@ -422,6 +431,11 @@ match guard:
 #Caught by the guard and is taken to meet the mayor
     case "caught":
         weapon = ""
+    case "convinced":
+        stuff goes here
+
+path.append(tofflin)
+path.append(weapon)
 
 #THE DUNGEON
 #Factors will include the decisions made up to this point
