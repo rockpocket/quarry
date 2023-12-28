@@ -284,7 +284,7 @@ match guard:
 
         sleep(3)
 
-        trader = input('''\"WHAT'LL BE YA DICKLESS FUCKIN COWARD!?\" he asks you.
+        trader = input('''\"WHAT'LL BE YA DICKLESS COWARD!?\" he asks you.
         In front of him there is a mace, a cutlass, and a twenty inch iron dildo.
         
         Which do you choose?\n''')
@@ -298,13 +298,20 @@ match guard:
             match trader:
                 case "mace":
                     weapon = "mace"
+                    print("Ah.. the spiky ball mace...")
+                    break
                 case "cutlass":
                     weapon = "cutlass"
+                    print("The cutlass! A classic pirate weapon indeed, great for slashing...")
+                    break
                 case "iron dildo":
                     weapon = "iron dildo"
+                    print("Oh, that ones not really a weapon.. but, I guess it can be!")
                     break
                 case other:
                     trader = input("What word is that? I don't have any \"{trader}\". Pick from my selection I got!")
+                    if "iron" or "dildo" in trader:
+                        trader = "iron dildo"
 
 
 
@@ -317,7 +324,7 @@ match guard:
                 sleep(4)
                 print(f'''but at least you got the {weapon} for free.\n''')
             case other:
-                print('''\"Aye, a good choice there laddie!\" says Dickbeard, his locks jiggling majestically.
+                print('''\"A good choice indeed there, laddie!\" says Dickbeard, his locks jiggling majestically.
                 \"Now, ye be careful with that thar quest yer goin' on. They don't offer 1000 Gold for now normal mission.
                 No boy, that amount only gets offered to people they intend to use as cannon fodder. Keep an eye out,
                 OR THEY'LL TAKE YOUR BALLS! HAAHAHAHAHAA!\"\n
@@ -365,9 +372,9 @@ match guard:
             sleep(2)
             follow = input('''Do you follow him down the hatch?\n''')
             follow = follow.casefold()
-            if follow == "yes" or "follow":
+            if "yes" or "follow" in follow:
                 sleep(1)
-                print("")
+                print("**WELCOME TO THE THIEVES DEN**")
             else:
                 sleep(1)
                 print('''You hear a whisper from a voice uncomfortably close to your ear say
@@ -394,12 +401,31 @@ match guard:
                     or do you run?\n''')
 
                     if "fight" or "kill" or "revenge" or "hatch" in revenge:
-                        print('''''')
+                        print('''You drop down into the hatch and start punching everyone you can see. Unfortunately,
+                        there are a shit load of thieves, and you are hopelessly outmatched. Worse yet, you've pissed
+                        them all off.''')
+                        sleep(5)
+                        flee = ('''Do you flee, or fight?''')
+                        while True:
+                            match flee:
+                                case "fight":
+                                    print('''You wade into the den of thieves wielding blows in all directions.
+                                    
+                                    Eventually, you are taken down, and bleed to death from several hundred
+                                    stabe wounds.
+                                    
+                                    *The End*''')
+                                    exit()
+                                case "flee":
+                                    '''Narrowly dodging the flying daggers and trip mines, you manage to find your
+                                    way out of the corridor which you had entered, and escape into the city streets.'''
+                                    break
                     else:
-                        print('''''')
+                        print('''you get on the road and leave''')
 
                 else:
-                    print('''You feel cold steel peirce your spine, and the world goes black. You are dead.''')
+                    print('''You feel cold steel peirce your spine, and the world goes black.
+                    If you had been more trained in fighting you might have reacted in time... but alas, you are dead.''')
 
                     sleep(2)
 
